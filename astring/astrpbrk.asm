@@ -13,6 +13,8 @@ astrpbrk proc
 _loop:
 	xor		r10,	r10
 	mov		r8b,	byte ptr[rax]
+	test	r8b,	r8b
+	je		_not_found
 
 _sub_loop:
 	mov		r9b,	byte ptr[rdx + r10]
@@ -26,6 +28,9 @@ _sub_loop:
 _sub_loop_end:
 	inc		rax
 	jmp		_loop
+
+_not_found:
+	xor		rax,	rax
 
 _end:
 	ret
