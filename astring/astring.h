@@ -1,4 +1,4 @@
-// Copyright (c) 2018 Freiyer P. Kim. All rights reserved.
+// Copyright (c) 2018 Chanjung Kim. All rights reserved.
 
 #pragma once
 
